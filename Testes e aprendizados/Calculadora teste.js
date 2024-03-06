@@ -1,78 +1,56 @@
-const numero1= parseFloat(document.getElementById("Número 1").value);
-const numero2= parseFloat(document.getElementById("Número 2").value);
+const readline = require('readline-sync');
 
-const Adição= numero1 + numero2;
-const menos= numero1 - numero2;
-const dividir= numero1/numero2;
-const multiplicar= numero1*numero2;
+console.log("Bem vindo a calculadora BNU ! ");
+console.log("Escolha uma das opções: \n 1. Adição \n 2. Subtração \n 3. Divisão \n 4. Multiplicação \n 5. Sair");
 
+const operacao = parseInt(readline.question("Escolha uma operação: "));
 
-function soma(){
+switch (operacao) {
 
- realizarOperação('+');
-
- }
-
-
- function subtração(){
-
-    realizarOperação('-');
-   
-    }
-
-
-
-    function divisao(){
-        
-        realizarOperação('/');
-
-
-}
-
-function multiplicacao(){
-
-    realizarOperação('*');
-   
-    }
-        
-if (isNaN(numero1) || isNaN(numero2)) {
-    alert("Por favor, insira números válidos.");
-    return;
-}
-
-let resultado;
-
-switch (operador) {
-    case '+':
-        resultado = numero1 + numero2;
+    case 1:
+        console.log("Digite aqui o primeiro número: ");
+        const numero1 = parseInt(readline.question());
+        console.log("Digite aqui o segundo número: ");
+        const numero2 = parseInt(readline.question());
+        const soma = numero1 + numero2;
+        console.log("Seu resultado é: " + soma);
         break;
-    case '-':
-        resultado = numero1 - numero2;
+
+    case 2:
+        console.log("Digite aqui o primeiro número: ");
+        const numerosub = parseInt(readline.question());
+        console.log("Digite aqui seu segundo número: ");
+        const numero2sub = parseInt(readline.question());
+        const sub = numerosub - numero2sub;
+        console.log("Seu resultado é: " + sub);
         break;
-    case '*':
-        resultado = numero1 * numero2;
-        break;
-    case '/':
-        if (numero2 === 0) {
-            alert("Não é possível dividir por zero.");
-            return;
+
+    case 3:
+        console.log("Digite aqui o primeiro número: ");
+        const numerodiv = parseInt(readline.question());
+        console.log("Digite aqui seu segundo número: ");
+        const numero2div = parseInt(readline.question());
+        if (numerodiv === 0 || numero2div === 0) {
+            console.log("Impossível dividir por zero");
+        } else {
+            const div = numerodiv / numero2div;
+            console.log("Seu resultado é: " + div);
         }
-        resultado = numero1 / numero2;
         break;
+
+    case 4:
+        console.log("Digite aqui o primeiro número: ");
+        const numeromulti = parseInt(readline.question());
+        console.log("Digite aqui seu segundo número: ");
+        const numero2multi = parseInt(readline.question());
+        const multi = numeromulti * numero2multi;
+        console.log("Seu resultado é: " + multi);
+        break;
+
     default:
-        alert("Operação inválida.");
-        return;
+        console.log("Obrigado por usar nossa calculadora !");
+        break;
 }
-
-document.getElementById("resultado").value = resultado;
-       
-
-
-
-
-
-
-
 
 
 
