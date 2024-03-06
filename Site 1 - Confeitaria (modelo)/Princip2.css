@@ -63,9 +63,28 @@ color:rgb(0, 0, 0);
 h1:hover{
 
 color: blueviolet;
+}
+
+h2{
+
+text-align: center;
+transition: 0.3s ease;
+font-family: 'Segoe UI' sans-serif;
+font-weight: 400;
+color: black;
+
 
 
 }
+
+h2:hover{
+
+color:blueviolet;
+
+
+
+}
+
 
 p{
 

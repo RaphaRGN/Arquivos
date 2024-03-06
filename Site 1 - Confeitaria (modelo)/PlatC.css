@@ -18,14 +18,15 @@ margin: 0 auto;
 
 nav {
 display: flex;
+
 }
+
 
 nav ul{
 
 display: flex;
 list-style: none;
 gap: 1rem 2rem;
-
 }
 
 nav ul li a{
