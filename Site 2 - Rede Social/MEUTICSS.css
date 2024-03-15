@@ -8,7 +8,7 @@ padding: 0;
 
 body{
 
-background-color: rgb(88, 191, 191);
+background-color: rgb(81, 127, 193);
 
 
 }
@@ -34,9 +34,10 @@ h1 :hover{
    
 
 nav {
+    color: rgb(0, 0, 0);
     display: flex;
-    
-    }
+    align-items: center;
+}
     
     
     nav ul{
@@ -44,7 +45,8 @@ nav {
     display: flex;
     list-style: none;
     gap: 1rem 2rem;
-    }
+   align-items: center; 
+}
     
     nav ul li a{
     
@@ -59,16 +61,16 @@ nav {
     
     nav div img{
     justify-content: flex-start;
-    width: 50px;
+    width: 80px;
     margin-right: 10px; 
     border: none;
-    
+    padding: 0px;
     }
     
     
     nav ul li a:hover{
-    color: palevioletred;
-    border-bottom: 1px solid palevioletred;
+    color: rgb(245, 234, 237);
+    border-bottom: 1px solid rgb(245, 234, 237);
     
     } 
     
