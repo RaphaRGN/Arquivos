@@ -9,7 +9,8 @@ padding: 0;
 body{
 
 background-color: rgb(81, 127, 193);
-
+margin: 0;
+padding: 0;
 
 }
 
@@ -21,7 +22,6 @@ h1{
     padding: 8px 0 ;
     transition: all;
     transition-duration: 300ms;
-cursor: pointer;
 text-align: center;
 }
 
@@ -34,19 +34,31 @@ h1 :hover{
    
 
 nav {
-    color: rgb(0, 0, 0);
+  
     display: flex;
     align-items: center;
+
 }
-    
-    
-    nav ul{
+   
+.navbar {
+    width: 100%;
+    background-color: rgb(255, 255, 255); 
+margin: 0;
+padding: 0;
+box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+}
+ 
+
+nav ul{
     
     display: flex;
     list-style: none;
     gap: 1rem 2rem;
    align-items: center; 
-}
+   box-sizing: border-box; /* Incluir bordas e preenchimento no tamanho total */
+ }
+
+
     
     nav ul li a{
     
@@ -56,12 +68,14 @@ nav {
     padding: 8px 0 ;
     transition: all;
     transition-duration: 300ms;
-    border-bottom: 1px solid rgba(255, 68, 0, 0)
-    }
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+   font-size: 25px;
+ color: rgb(32, 73, 150);
+}
     
     nav div img{
     justify-content: flex-start;
-    width: 80px;
+    width: 50px;
     margin-right: 10px; 
     border: none;
     padding: 0px;
@@ -69,8 +83,8 @@ nav {
     
     
     nav ul li a:hover{
-    color: rgb(245, 234, 237);
-    border-bottom: 1px solid rgb(245, 234, 237);
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
     
     } 
     

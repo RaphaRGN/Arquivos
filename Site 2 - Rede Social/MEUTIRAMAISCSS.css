@@ -9,7 +9,8 @@ html{
     body{
     
     background-color: rgb(81, 127, 193);
-    
+    margin: 0;
+    padding: 0;
     
     }
     
@@ -21,7 +22,6 @@ html{
         padding: 8px 0 ;
         transition: all;
         transition-duration: 300ms;
-    cursor: pointer;
     text-align: center;
     }
     
@@ -34,19 +34,31 @@ html{
        
     
     nav {
-        color: rgb(0, 0, 0);
+      
         display: flex;
         align-items: center;
+    
     }
-        
-        
-        nav ul{
+       
+    .navbar {
+        width: 100%;
+        background-color: rgb(255, 255, 255); 
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+    }
+     
+    
+    nav ul{
         
         display: flex;
         list-style: none;
         gap: 1rem 2rem;
        align-items: center; 
-    }
+       box-sizing: border-box; /* Incluir bordas e preenchimento no tamanho total */
+     }
+    
+    
         
         nav ul li a{
         
@@ -56,12 +68,14 @@ html{
         padding: 8px 0 ;
         transition: all;
         transition-duration: 300ms;
-        border-bottom: 1px solid rgba(255, 68, 0, 0)
-        }
+        border-bottom: 1px solid rgba(255, 68, 0, 0);
+       font-size: 25px;
+     color: rgb(32, 73, 150);
+    }
         
         nav div img{
         justify-content: flex-start;
-        width: 80px;
+        width: 50px;
         margin-right: 10px; 
         border: none;
         padding: 0px;
@@ -69,20 +83,54 @@ html{
         
         
         nav ul li a:hover{
-        color: rgb(245, 234, 237);
-        border-bottom: 1px solid rgb(245, 234, 237);
+        color: rgb(14, 13, 14);
+        border-bottom: 1px solid rgb(14,13,14);
+        
         }
 
 
         table {
-            width: 100%;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
             border-collapse: collapse;
+           
+            
         }
+        
         table, th, td {
-            border: 1px solid black;
+            border: 3px solid black;
             padding: 8px;
             text-align: center;
         }
+        
+        
         th {
-            background-color: #f2f2f2;
+        
+            background-color: #221f1f;
+        
+        
+        
+        }
+  
+        th::first-line{
+
+color: white;
+font-family: 'Segoe UI', sans-serif;
+text-transform: uppercase;
+
+        }
+        
+        td {
+        background-color: #f2f2f2;
+    
+
+        }
+
+        td::first-line{
+
+color: rgb(0, 0, 0);
+font-family: 'Segoe UI', sans-serif;
+
+
         }

@@ -1,10 +1,8 @@
-var numerolinhas = 14;
-var corpotabela = document.getElementById("tabela-corpo")
+    const btnEditar = document.getElementById('btnEditar');
+    const camposEditaveis = document.querySelectorAll('#tabela tbody td[contenteditable="false"]');
 
-for(var i = 0; i < numerolinhas; i++){
-
-var novalinha = document.createElement("tr");
-newRow.innerHTML = '<td contenteditable="true"></td><td contenteditable="true"></td>';
-tbody.appendChild(newRow);
-
-}
+    btnEditar.addEventListener('click', function() {
+      camposEditaveis.forEach(function(campo) {
+        campo.contentEditable = 'true';
+      });
+    })
