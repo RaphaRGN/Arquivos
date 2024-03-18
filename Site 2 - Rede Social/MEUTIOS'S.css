@@ -1,0 +1,100 @@
+html{
+
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+    
+    body{
+    
+    background-color: rgb(81, 127, 193);
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+    
+    h1{
+    
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 600;
+        padding: 8px 0 ;
+        transition: all;
+        transition-duration: 300ms;
+    text-align: center;
+    }
+    
+    
+    h1 :hover{
+     color: rgba(113, 150, 213, 0);
+     border-bottom: 1px solid rgb(32, 13, 201);
+    
+    }
+       
+    
+    nav {
+      
+        display: flex;
+        align-items: center;
+    
+    }
+       
+    .navbar {
+        width: 100%;
+        background-color: rgb(255, 255, 255); 
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+    }
+     
+    
+    nav ul{
+        
+        display: flex;
+        list-style: none;
+        gap: 1rem 2rem;
+       align-items: center; 
+       box-sizing: border-box; 
+     }
+    
+    
+        
+        nav ul li a{
+        
+        text-decoration: none;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 600;
+        padding: 8px 0 ;
+        transition: all;
+        transition-duration: 300ms;
+        border-bottom: 1px solid rgba(255, 68, 0, 0);
+       font-size: 25px;
+     color: rgb(32, 73, 150);
+    }
+        
+        nav div img{
+        justify-content: flex-start;
+        width: 50px;
+        margin-right: 10px; 
+        border: none;
+        padding: 0px;
+        }
+        
+        
+        nav ul li a:hover{
+        color: rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(0, 0, 0);
+        
+        } 
+
+
+
+.caixabranca{
+
+
+color: aliceblue;
+
+
+
+}

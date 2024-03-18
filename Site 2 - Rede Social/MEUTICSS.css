@@ -55,7 +55,7 @@ nav ul{
     list-style: none;
     gap: 1rem 2rem;
    align-items: center; 
-   box-sizing: border-box; /* Incluir bordas e preenchimento no tamanho total */
+   box-sizing: border-box; 
  }
 
 
