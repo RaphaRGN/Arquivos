@@ -18,6 +18,16 @@ nav {
  display: flex;
    
 }
+
+.navbar {
+    width: 100%;
+    background-color: rgb(255, 255, 255); 
+margin: 0;
+padding: 0;
+box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1); 
+text-align: center;
+
+}
     
     nav ul{
     
@@ -28,7 +38,7 @@ nav {
     }
     
     nav ul li a{
-    
+    font-size: 18px;
     text-decoration: none;
     font-family: 'Segoe UI', sans-serif;
     font-weight: 600;
@@ -99,12 +109,9 @@ text-align: center;
 }
     
 .imagem{
-
-height: 80px;
-align-items: center;
 justify-content: center;
-width: 80px;
-display: flex;
+align-items: center;
 padding: 10px;
-
+height: 30px;
+max-width: 110px;
 }
