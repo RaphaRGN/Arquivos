@@ -102,6 +102,7 @@ html{
             border: 3px solid black;
             padding: 8px;
             text-align: center;
+        align-items: center;
         }
         
         
@@ -113,24 +114,62 @@ html{
         
         }
   
-        th::first-line{
+ th::first-line{
 
 color: white;
 font-family: 'Segoe UI', sans-serif;
 text-transform: uppercase;
 
-        }
+}
         
-        td {
-        background-color: #f2f2f2;
+ td {
+background-color: #f2f2f2;
     
 
-        }
+}
 
-        td::first-line{
+td::first-line{
 
 color: rgb(0, 0, 0);
 font-family: 'Segoe UI', sans-serif;
 
+}
 
-        }
+button{
+
+
+padding: 8px;
+border-radius: 8px;
+transition: 300ms;
+text-decoration: none;
+color: inherit;
+text-transform: uppercase;
+font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+font-size: 10px;
+}
+
+
+
+button:hover {
+
+background-color: rgb(24, 24, 225);
+box-shadow:3px 4px 8px rgba(78, 38, 211, 0.414) ;
+
+}
+
+.bn60 {
+  background-color: #2516ad;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  position: relative;
+  outline: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 45px;
+  width: 120px;
+border: none;
+}
